@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PencilApp"
+             xmlns:controls="clr-namespace:PencilApp.Views.Controls;"
+             x:Class="PencilApp.MainPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" 
+                     HorizontalOptions="CenterAndExpand">
+            <controls:ButtonLabel Text="Click Me" Tapped="ButtonLabel_OnTapped"/>
+            <Label x:Name="CountLabel"  Text="Tapped Count : "/>
+            <Button Clicked="GoPencilPage" Text="Pencil page"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
